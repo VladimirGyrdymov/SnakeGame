@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gameFieldPanel = new System.Windows.Forms.Panel();
+            this.gameFieldPanel = new MyPanel();
             this.saveNicknameButton = new System.Windows.Forms.Button();
             this.inputNicknameTextBox = new System.Windows.Forms.TextBox();
             this.congratulationsLabel = new System.Windows.Forms.Label();

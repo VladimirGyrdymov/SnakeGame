@@ -33,6 +33,18 @@ namespace Snake
         Bitmap bmp;
         SoundPlayer soundPlayer = new SoundPlayer("C:\\Users\\Владимир\\source\\repos\\Snake\\Snake\\bin\\Debug\\фон.wav");
 
+        public class MyPanel : System.Windows.Forms.Panel
+        {
+            public MyPanel()
+            {
+                this.SetStyle(
+                    System.Windows.Forms.ControlStyles.UserPaint |
+                    System.Windows.Forms.ControlStyles.AllPaintingInWmPaint |
+                    System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer,
+                    true);
+            }
+        }
+
         private void SnakeApplication_Load(object sender, EventArgs e)
         {
             bmp = new Bitmap(PANEL_SIZE, PANEL_SIZE);
